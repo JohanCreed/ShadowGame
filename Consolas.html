@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolas</title>
+    <style>
+        /* Fuente estilo videojuego */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('imagenes/fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            padding: 50px 0;
+        }
+        header h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 48px;
+            color: #ffcc00;
+            text-shadow: 4px 4px 0 #ff0000;
+            margin: 0;
+        }
+        .container {
+            flex: 1;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .section {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        .section h3 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 20px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 0 #ff0000;
+            margin-bottom: 10px;
+        }
+        .section img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            border: 3px solid #fff; /* Borde blanco */
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .section img:hover {
+            transform: scale(1.1);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff9900;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consolas</h1>
+    </header>
+
+    <div class="container">
+        <h2>Selecciona una consola</h2>
+        <div class="content">
+            <div class="section">
+                <h3>Xbox</h3>
+                <img src="imagenes/XboxL.jpg" alt="Xbox" onclick="window.location.href = 'xbox.html'">
+            </div>
+            <div class="section">
+                <h3>PlayStation</h3>
+                <img src="imagenes/PlayS.jpg" alt="PlayStation" onclick="window.location.href = 'playstation.html'">
+            </div>
+            <div class="section">
+                <h3>Nintendo</h3>
+                <img src="imagenes/NintendoL.png" alt="Nintendo" onclick="window.location.href = 'nintendo.html'">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;  2025 Shadow Gaming. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
